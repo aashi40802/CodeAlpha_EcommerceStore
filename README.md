@@ -69,7 +69,7 @@ CodeAlpha_EcommerceStore/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/CodeAlpha_EcommerceStore.git
+   git clone https://github.com/aashi40802/CodeAlpha_EcommerceStore.git
    cd CodeAlpha_EcommerceStore
    ```
 
@@ -83,7 +83,7 @@ CodeAlpha_EcommerceStore/
    ```
    PORT=5000
    MONGODB_URI=mongodb://localhost:27017/shopzone
-   JWT_SECRET=your_secret_key_here
+   JWT_SECRET=shopzone_secret_key_change_this_in_production
    ```
 
 4. **Start MongoDB** (if running locally)
@@ -124,7 +124,7 @@ CodeAlpha_EcommerceStore/
 
 ## 👨‍💻 Author
 
-**Your Name** — CodeAlpha Full Stack Development Intern
+**Aashi** — CodeAlpha Full Stack Development Intern
 
 ## 📄 License
 
