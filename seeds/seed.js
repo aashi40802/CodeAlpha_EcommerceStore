@@ -4,112 +4,112 @@ const Product = require('../models/Product');
 
 const products = [
   {
-    name: 'Wireless Bluetooth Headphones',
-    description: 'Premium noise-cancelling wireless headphones with 30-hour battery life. Features deep bass, comfortable ear cushions, and built-in microphone for calls.',
-    price: 2999,
-    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=300&fit=crop',
+    name: 'AirPods Pro (2nd Gen)',
+    description: 'Active Noise Cancellation, Adaptive Transparency, and Personalized Spatial Audio. Up to 6 hours of listening time with ANC enabled. MagSafe charging case with built-in speaker and lanyard loop.',
+    price: 24900,
+    image: 'https://images.unsplash.com/photo-1606220588913-b3aacb4d2f46?w=500&h=400&fit=crop',
     category: 'Electronics',
-    stock: 25,
-    rating: 4.5
-  },
-  {
-    name: 'Smart Watch Pro',
-    description: 'Feature-packed smartwatch with heart rate monitor, GPS tracking, sleep analysis, and 7-day battery life. Water resistant up to 50m.',
-    price: 4999,
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop',
-    category: 'Electronics',
-    stock: 15,
-    rating: 4.3
-  },
-  {
-    name: 'Portable Bluetooth Speaker',
-    description: 'Compact waterproof speaker with 360-degree sound. Perfect for outdoor adventures with 12-hour playtime.',
-    price: 1499,
-    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=300&fit=crop',
-    category: 'Electronics',
-    stock: 30,
-    rating: 4.2
-  },
-  {
-    name: 'Classic Denim Jacket',
-    description: 'Timeless denim jacket made from premium cotton. Features button closure, chest pockets, and a comfortable relaxed fit.',
-    price: 1999,
-    image: 'https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=400&h=300&fit=crop',
-    category: 'Clothing',
     stock: 20,
-    rating: 4.4
+    rating: 4.8
   },
   {
-    name: 'Running Shoes Ultra',
-    description: 'Lightweight running shoes with responsive cushioning and breathable mesh upper. Ideal for daily training and long runs.',
-    price: 3499,
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop',
-    category: 'Sports',
-    stock: 18,
-    rating: 4.6
-  },
-  {
-    name: 'Leather Crossbody Bag',
-    description: 'Elegant genuine leather crossbody bag with adjustable strap, multiple compartments, and secure zip closure.',
-    price: 2499,
-    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=300&fit=crop',
-    category: 'Accessories',
+    name: 'Ultra HD Smart Watch',
+    description: 'Premium smartwatch with always-on Retina display, blood oxygen sensor, ECG app, heart rate monitoring, sleep tracking, and GPS. Water resistant to 50 meters with 36-hour battery life.',
+    price: 44900,
+    image: 'https://images.unsplash.com/photo-1546868871-af0de0ae72be?w=500&h=400&fit=crop',
+    category: 'Electronics',
     stock: 12,
     rating: 4.7
   },
   {
-    name: 'JavaScript: The Good Parts',
-    description: 'A deep dive into the best features of JavaScript. Essential reading for any web developer looking to write clean, efficient code.',
-    price: 599,
-    image: 'https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop',
-    category: 'Books',
-    stock: 50,
-    rating: 4.8
-  },
-  {
-    name: 'Stainless Steel Water Bottle',
-    description: 'Double-wall vacuum insulated bottle keeps drinks cold for 24 hours or hot for 12 hours. BPA-free, 750ml capacity.',
-    price: 799,
-    image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop',
-    category: 'Home & Kitchen',
-    stock: 40,
-    rating: 4.1
-  },
-  {
-    name: 'Wireless Charging Pad',
-    description: 'Fast wireless charger compatible with all Qi-enabled devices. Sleek design with LED indicator and anti-slip surface.',
-    price: 899,
-    image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop',
+    name: 'Portable Bluetooth Speaker',
+    description: 'Immersive 360-degree sound in a compact design. IP67 waterproof and dustproof rating. 20 hours of playtime with USB-C fast charging. Perfect for outdoor adventures.',
+    price: 12990,
+    image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&h=400&fit=crop',
     category: 'Electronics',
-    stock: 35,
-    rating: 4.0
+    stock: 28,
+    rating: 4.4
   },
   {
-    name: 'Yoga Mat Premium',
-    description: 'Extra thick 6mm yoga mat with non-slip surface. Eco-friendly TPE material, includes carrying strap. Perfect for yoga and pilates.',
-    price: 1299,
-    image: 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=400&h=300&fit=crop',
+    name: 'Premium Leather Jacket',
+    description: 'Handcrafted genuine leather jacket with satin lining. Features YKK zippers, adjustable waist belt, and two interior pockets. Timeless design that gets better with age.',
+    price: 8999,
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&h=400&fit=crop',
+    category: 'Clothing',
+    stock: 10,
+    rating: 4.6
+  },
+  {
+    name: 'Running Shoes Air Max',
+    description: 'Engineered mesh upper for breathability. Responsive foam cushioning absorbs impact. Rubber outsole with flex grooves for natural movement. Ideal for daily runs and training.',
+    price: 7499,
+    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=400&fit=crop',
     category: 'Sports',
     stock: 22,
     rating: 4.5
   },
   {
-    name: 'Cotton T-Shirt Pack (3)',
-    description: 'Pack of 3 premium cotton t-shirts in black, white, and grey. Soft fabric, round neck, regular fit.',
-    price: 999,
-    image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=300&fit=crop',
-    category: 'Clothing',
-    stock: 45,
+    name: 'Minimalist Leather Wallet',
+    description: 'Slim bifold wallet crafted from full-grain leather. RFID blocking technology protects your cards. Holds up to 8 cards with a bill compartment. Comes in a premium gift box.',
+    price: 1999,
+    image: 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=500&h=400&fit=crop',
+    category: 'Accessories',
+    stock: 35,
     rating: 4.3
   },
   {
-    name: 'Ceramic Coffee Mug Set',
-    description: 'Set of 4 handcrafted ceramic mugs in earthy tones. Microwave and dishwasher safe, 350ml capacity each.',
-    price: 699,
-    image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=300&fit=crop',
+    name: 'Clean Code by Robert C. Martin',
+    description: 'A handbook of agile software craftsmanship. Learn to write code that is clean, readable, and maintainable. Essential reading for every developer who wants to level up their skills.',
+    price: 499,
+    image: 'https://images.unsplash.com/photo-1532012197267-da84d127e765?w=500&h=400&fit=crop',
+    category: 'Books',
+    stock: 50,
+    rating: 4.9
+  },
+  {
+    name: 'Ceramic Pour Over Coffee Set',
+    description: 'Hand-thrown ceramic dripper with matching server and two cups. Produces a clean, flavorful cup every time. Includes reusable stainless steel filter. Dishwasher safe.',
+    price: 2499,
+    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=400&fit=crop',
     category: 'Home & Kitchen',
-    stock: 28,
+    stock: 18,
+    rating: 4.6
+  },
+  {
+    name: 'Wireless Charging Station',
+    description: '3-in-1 wireless charging pad for phone, earbuds, and watch. Qi-certified with up to 15W fast charging. Non-slip surface with LED indicator. Clean cable management.',
+    price: 2999,
+    image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=500&h=400&fit=crop',
+    category: 'Electronics',
+    stock: 30,
+    rating: 4.2
+  },
+  {
+    name: 'Premium Yoga Mat',
+    description: 'Extra thick 8mm eco-friendly TPE material. Non-slip texture on both sides for stability. Includes alignment lines for proper form. Comes with carrying strap and bag.',
+    price: 2199,
+    image: 'https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&h=400&fit=crop',
+    category: 'Sports',
+    stock: 25,
+    rating: 4.5
+  },
+  {
+    name: 'Oversized Cotton Hoodie',
+    description: 'Premium heavyweight cotton hoodie with brushed fleece interior. Relaxed oversized fit, ribbed cuffs and hem, kangaroo pocket. Available in minimal earth tones.',
+    price: 2499,
+    image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=400&fit=crop',
+    category: 'Clothing',
+    stock: 40,
     rating: 4.4
+  },
+  {
+    name: 'Aviator Sunglasses',
+    description: 'Classic aviator frame with polarized UV400 lenses. Lightweight metal frame with adjustable nose pads. Includes hard case and microfiber cleaning cloth.',
+    price: 1499,
+    image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=400&fit=crop',
+    category: 'Accessories',
+    stock: 32,
+    rating: 4.3
   }
 ];
 
@@ -117,15 +117,10 @@ const seedDB = async () => {
   try {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log('Connected to MongoDB');
-
-    // Clear existing products
     await Product.deleteMany({});
     console.log('Cleared existing products');
-
-    // Insert sample products
     await Product.insertMany(products);
     console.log(`Seeded ${products.length} products successfully!`);
-
     process.exit(0);
   } catch (error) {
     console.error('Seeding error:', error.message);
