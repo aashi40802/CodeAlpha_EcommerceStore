@@ -1,26 +1,41 @@
 # 🛒 ShopZone - E-Commerce Store
 
-A full-stack e-commerce web application built with Node.js, Express.js, MongoDB, and vanilla JavaScript.
+A full-stack e-commerce web application built with Node.js, Express.js, MongoDB, and vanilla JavaScript. Features a clean Apple-inspired design with glassmorphism navbar, smooth animations, and responsive layout.
 
 **CodeAlpha Full Stack Development Internship — Task 1**
 
 ## ✨ Features
 
-- **Product Listings** — Browse products with search, category filter, and sorting
-- **Product Details** — View detailed product info with quantity selection
-- **Shopping Cart** — Add/remove items, adjust quantities, persistent cart
-- **User Authentication** — Register & login with JWT-based auth
-- **Order Processing** — Checkout with shipping address, order confirmation
-- **My Orders** — View order history with status tracking
-- **Responsive Design** — Works on desktop, tablet, and mobile
+- **Product Listings** — Browse 12+ products with real-time search, category filter, and sorting
+- **Product Details** — View detailed product info with quantity selection and image zoom
+- **Shopping Cart** — Add/remove items, adjust quantities, persistent cart using localStorage
+- **User Authentication** — Register & login with JWT-based authentication and bcrypt password hashing
+- **Order Processing** — Checkout with shipping address form, order validation, and stock management
+- **My Orders** — View complete order history with status tracking
+- **Responsive Design** — Fully responsive across desktop, tablet, and mobile devices
+- **Modern UI** — Glassmorphism navbar, staggered card animations, smooth hover transitions
 
 ## 🛠 Tech Stack
 
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB with Mongoose ODM
 - **Authentication:** JWT (JSON Web Tokens) + bcrypt
 - **Architecture:** RESTful API + MVC Pattern
+
+## 📸 Screenshots
+
+### Homepage - Product Listing
+![Homepage](screenshots/home.png)
+
+### Product Detail Page
+![Product Detail](screenshots/product.png)
+
+### Shopping Cart
+![Shopping Cart](screenshots/cart.png)
+
+### Checkout Modal
+![Checkout](screenshots/checkout.png)
 
 ## 📁 Project Structure
 
@@ -51,11 +66,11 @@ CodeAlpha_EcommerceStore/
 │   ├── css/style.css      # Styles
 │   └── js/
 │       ├── auth.js        # Auth state management
-│       ├── cart.js         # Cart (localStorage)
-│       ├── main.js        # Product listing logic
-│       ├── product.js     # Product detail logic
-│       ├── checkout.js    # Cart page + checkout
-│       └── orders.js      # Orders page logic
+│       ├── cart.js         # Cart logic (localStorage)
+│       ├── main.js        # Product listing & search
+│       ├── product.js     # Product detail page
+│       ├── checkout.js    # Cart rendering & checkout
+│       └── orders.js      # Orders page
 └── package.json
 ```
 
@@ -63,7 +78,7 @@ CodeAlpha_EcommerceStore/
 
 ### Prerequisites
 - [Node.js](https://nodejs.org/) (v16 or higher)
-- [MongoDB](https://www.mongodb.com/try/download/community) (local) OR [MongoDB Atlas](https://www.mongodb.com/atlas) (cloud)
+- [MongoDB Atlas](https://www.mongodb.com/atlas) (free cloud database)
 
 ### Steps
 
@@ -79,29 +94,24 @@ CodeAlpha_EcommerceStore/
    ```
 
 3. **Configure environment variables**
-   Create a `.env` file (already included as template):
+   Create a `.env` file:
    ```
    PORT=5000
-   MONGODB_URI=mongodb://localhost:27017/shopzone
+   MONGODB_URI=your_mongodb_connection_string
    JWT_SECRET=shopzone_secret_key_change_this_in_production
    ```
 
-4. **Start MongoDB** (if running locally)
-   ```bash
-   mongod
-   ```
-
-5. **Seed the database** (add sample products)
+4. **Seed the database** (add sample products)
    ```bash
    npm run seed
    ```
 
-6. **Start the server**
+5. **Start the server**
    ```bash
    npm run dev
    ```
 
-7. **Open in browser**
+6. **Open in browser**
    ```
    http://localhost:5000
    ```
@@ -113,14 +123,10 @@ CodeAlpha_EcommerceStore/
 | POST | `/api/auth/register` | Register new user | No |
 | POST | `/api/auth/login` | Login user | No |
 | GET | `/api/auth/me` | Get current user | Yes |
-| GET | `/api/products` | Get all products | No |
+| GET | `/api/products` | Get all products (search, filter, sort) | No |
 | GET | `/api/products/:id` | Get single product | No |
 | POST | `/api/orders` | Create new order | Yes |
 | GET | `/api/orders/my-orders` | Get user's orders | Yes |
-
-## 📸 Screenshots
-
-*Add screenshots of your running application here*
 
 ## 👨‍💻 Author
 
